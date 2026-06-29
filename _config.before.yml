@@ -107,11 +107,11 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: https://github.com/originalFactor/ptoe.cc
-  branch: gh-pages
-  ignore_hidden: false
+# deploy:
+#   type: git
+#   repo: https://github.com/originalFactor/ptoe.cc
+#   branch: gh-pages
+#   ignore_hidden: false
 
 tag-generator:
   enable_index_page: false

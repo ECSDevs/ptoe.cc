@@ -11,7 +11,6 @@ tags:
 - 三角函数
 - 数学
 title: 球面余弦定理
-
 ---
 
 ![示意图](/images/2026/05/21/ball_cosine/image.png)
@@ -79,5 +78,3 @@ $$
 $$
 \cos\angle A'OB' = \cos\angle AOB \cdot \cos^2\angle A'OA + \sin^2\angle A'OA
 $$
-
-

@@ -1,7 +1,9 @@
 node_modules/
+**/__pycache__/
 db.json
 public/
 .deploy_git/
 code/
 llm.txt
 .venv/
+.env

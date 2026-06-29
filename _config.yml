@@ -11,11 +11,6 @@ code_dir: downloads/code
 date_format: YYYY-MM-DD
 default_category: 未分类
 default_layout: post
-deploy:
-  branch: gh-pages
-  ignore_hidden: false
-  repo: https://github.com/originalFactor/ptoe.cc
-  type: git
 description: 只是一个臭写算法的
 exclude: null
 external_link:
