@@ -4,9 +4,9 @@ Gathering modified posts
 
 from pathlib import Path
 from subprocess import run, PIPE
-from constants import CURR_DIR, POST_DIR
+from constants import POST_DIR, BASELINE_FILE
 
-BASELINE_FILE = CURR_DIR / 'last_scanned_commit.txt'
+
 
 def get_changed_files() -> set[Path]:
     """

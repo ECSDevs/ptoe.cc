@@ -7,10 +7,10 @@ from pathlib import Path
 from os import getenv
 from json import loads
 from subprocess import run, PIPE
-from yaml import safe_load, YAMLError, safe_dump
+from yaml import safe_load, safe_dump
 from openai import OpenAI
 from dotenv import load_dotenv
-from constants import ROOT_DIR
+from constants import ROOT_DIR, BASELINE_FILE
 from frontmatter import load_frontmatter, dump_frontmatter
 from modified import get_changed_files
 
@@ -275,7 +275,7 @@ def update_baseline() -> None:
     current_commit = result.stdout.strip()
 
     if current_commit:
-        with open(ROOT_DIR / "last_scanned_commit.txt", "w", encoding="utf-8") as f:
+        with open(BASELINE_FILE, "w", encoding="utf-8") as f:
             f.write(current_commit)
         print(f"Updated baseline to commit: {current_commit}")
 
@@ -317,7 +317,9 @@ def main() -> None:
         translate(waiting_translate, known_translate, client, model)
 
     generate_config(exist_tags, exist_categories, known_translate)
-    update_baseline()
+
+    if changed_files:
+        update_baseline()
 
 
 if __name__ == '__main__':
