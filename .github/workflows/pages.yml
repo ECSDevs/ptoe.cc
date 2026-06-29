@@ -38,7 +38,7 @@ jobs:
           LLM_ENDPOINT: ${{ secrets.LLM_ENDPOINT }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-        run: python tag_translate_helper.py
+        run: python helper/translate.py
 
       - name: Commit changes
         run: |
