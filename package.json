@@ -26,7 +26,7 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-next": "^8.27.0",
-    "js-yaml": "^4.3.0"
+    "js-yaml": "^5.2.0"
   },
   "resolutions": {
     "stylus": "github:stylus/stylus#0.62.0"
